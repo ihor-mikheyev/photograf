@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Подбор моделей | YA Photograf</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header">
+          <a href="#" class="logo">Photograf</a>
+          <nav class="navigation">
+            <ul class="navigation-list">
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <section id="about">
+          <article>
+            <h1>Стань лицом успешных брендов</h1>
+            <div class="about-content">
+              <img src="./src/img/model01.png" alt="" />
+              <div class="text">
+                <p>
+                  Ваше лицо может рассказать историю. Ваши эмоции могут продать
+                  продукт. Стоковая фотография — это возможность показать себя
+                  и, возможно, увидеть своё изображение на страницах известных
+                  журналов или в рекламе крупных брендов.
+                </p>
+                <p>
+                  Регистрация открыта постоянно, а модели с портфолио могут быть
+                  приглашены сразу на съёмки.
+                </p>
+                <p>Есть два варианта работы с моделями: за деньги и по ТФП.</p>
+                <p>
+                  Наши фотографии часто появляются в рекламе и журнальных
+                  публикациях, что открывает для моделей новые возможности.
+                </p>
+                <p>
+                  Стать стоковой моделью может практически каждый. Если вы
+                  любите фотографироваться, хотите попробовать что-то новое и
+                  заработать – это отличный шанс! Вы получите удовольствие от
+                  творческого процесса, а возможно, вскоре увидите себя в
+                  рекламе известного бренда или на страницах популярных
+                  журналов.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <h2>Что не работает в кадре?</h2>
+            <div class="text">
+              <p>
+                Излишняя искусственность, чрезмерные косметические вмешательства
+                и неестественное поведение делают кадр неживым. Мы ищем
+                настоящие эмоции, а не маски.
+              </p>
+              <p>
+                Также нежелательны зажатость и неестественное, наигранное
+                поведение перед камерой.
+              </p>
+            </div>
+          </article>
+        </section>
+        <section id="portfolio">
+          <h2>Мои работы</h2>
+          <div class="gallery">
+            <div class="gallery-card">
+              <img src="./src/img/model02.png" alt="Model 2" />
+            </div>
+            <div class="gallery-card">
+              <img src="./src/img/model03.png" alt="Model 3" />
+            </div>
+            <div class="gallery-card">
+              <img src="./src/img/model04.png" alt="Model 4" />
+            </div>
+            <div class="gallery-card">
+              <img src="./src/img/model05.png" alt="Model 5" />
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>Заполни анкету — открой новые возможности</h2>
+          <!-- add attribute data to action attribute -->
+          <form
+            class="form"
+            action=""
+            method="post"
+            enctype="multipart/form-data"
+          >
+            <div class="input-wrap">
+              <label>Категория модели:</label>
+              <select name="model_category" required>
+                <option value="adult">Взрослый</option>
+                <option value="child">Ребёнок (до 18 лет)</option>
+                <option value="animal">Животное</option>
+              </select>
+            </div>
+            <div class="input-wrap">
+              <label>Пол:</label>
+              <select name="gender" required>
+                <option value="male">Мужчина</option>
+                <option value="female">Женщина</option>
+                <option value="other">Другое</option>
+              </select>
+            </div>
+            <div class="input-wrap">
+              <label>Город:</label>
+              <select name="city" required>
+                <option value="Pilsen">Пльзень</option>
+                <option value="Prague">Прага</option>
+              </select>
+            </div>
+            <div class="input-wrap">
+              <label>Ваше имя:</label>
+              <input type="text" name="name" placeholder="Name" required />
+            </div>
+            <div class="input-wrap">
+              <label>Соц. сети:</label>
+              <input type="text" name="social" />
+            </div>
+            <div class="input-wrap">
+              <label>Телефон:</label>
+              <input type="text" name="phone" required />
+            </div>
+            <div class="input-wrap">
+              <label>Год рождения:</label>
+              <input type="number" name="birth_year" />
+            </div>
+            <div class="input-wrap">
+              <label>О себе:</label>
+              <textarea name="about" rows="4"></textarea>
+            </div>
+            <label>Загрузите фото (до 10 штук):</label>
+            <input type="file" name="photos[]" multiple accept="image/*" />
+            <button id="submit" type="button">Отправить заявку</button>
+          </form>
+        </section>
+      </main>
+    </div>
+    <footer>
+      <div class="footer-wrap">
+        <p>© 2021 YA Photograf</p>
+        <a id="contact" href="mailto:ya.photograf@mail.com"
+          >ya.photograf@mail.com</a
+        >
+        <p>Подбор моделей</p>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
